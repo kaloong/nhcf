@@ -1,0 +1,12 @@
+define hostgroup {
+{%- for host_details in host.items() %}
+{%- if host_details[0]|length > 11: %}
+{{host_details[0]|indent(4,true)}}	{{ host_details[1]|indent(8,true)}}
+{%- elif host_details[0]|length < 4: %}
+{{host_details[0]|indent(4,true)}}			{{ host_details[1]|indent(8,true)}}
+{%- else: %}
+{{host_details[0]|indent(4,true)}}		{{ host_details[1]|indent(8,true)}}
+{%- endif %}
+{%- endfor%}
+}
+

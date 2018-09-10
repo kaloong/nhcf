@@ -1,0 +1,2 @@
+host_name;address;alias;display_name;use;check_command;icon_image;register
+some.host.int;10.10.10.10.10;somehost_alias;somehost_display_name;1_GENERIC_TEMPLATE_247;check-host-alive!!!!!!!!;linux.png;1
